@@ -246,7 +246,7 @@ export default function SimpleMapScreen() {
   return (
     <MapView style={styles.map} mapStyle={styleJson}>
       <Camera
-        centerCoordinate={[90.364159, 23.823724]} // Dhaka coordinates
+        centerCoordinate={[46.6773, 24.7136]} // Riyadh center
         zoomLevel={16}
       />
     </MapView>
