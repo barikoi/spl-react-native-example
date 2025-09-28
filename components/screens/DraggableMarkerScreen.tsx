@@ -16,7 +16,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { BARIKOI_COLORS, useBarikoiMapStyle } from "../../utils/mapUtils";
+import { BARIKOI_COLORS, useSPLMapStyle } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
 // Define marker data
@@ -54,7 +54,7 @@ const initialMarkers = [
 ];
 
 export default function DraggableMarkerScreen() {
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
   const [selectedMarker, setSelectedMarker] = useState<string | null>(null);
   const [draggingMarker, setDraggingMarker] = useState<string | null>(null);
   const [markerCoordinates, setMarkerCoordinates] = useState(initialMarkers);

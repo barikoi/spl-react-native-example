@@ -34,7 +34,7 @@ export const fetchBarikoiMapStyle = async (): Promise<any> => {
  * @param apiKey - Optional API key override
  * @returns {styleJson: any, loading: boolean, error: string | null}
  */
-export const useBarikoiMapStyle = () => {
+export const useSPLMapStyle = () => {
   const [styleJson, setStyleJson] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);

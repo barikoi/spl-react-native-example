@@ -16,11 +16,11 @@ import {
   Text,
   View,
 } from "react-native";
-import { BARIKOI_COLORS, useBarikoiMapStyle } from "../../utils/mapUtils";
+import { BARIKOI_COLORS, useSPLMapStyle } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
 export default function PolygonScreen() {
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
 
   const polygonGeoJSON = {
     type: "FeatureCollection",

@@ -19,7 +19,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { BARIKOI_COLORS, useBarikoiMapStyle } from "../../utils/mapUtils";
+import { BARIKOI_COLORS, useSPLMapStyle } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
 // Helper function to convert Expo location to MapLibre location
@@ -38,11 +38,7 @@ const convertLocation = (
 });
 
 export default function CurrentLocationScreen() {
-  const {
-    styleJson,
-    loading: mapLoading,
-    error: mapError,
-  } = useBarikoiMapStyle();
+  const { styleJson, loading: mapLoading, error: mapError } = useSPLMapStyle();
   const [userLocation, setUserLocation] = useState<Location | null>(null);
   const [hasLocationPermission, setHasLocationPermission] = useState(false);
   const [permissionLoading, setPermissionLoading] = useState(true);

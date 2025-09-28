@@ -21,12 +21,12 @@ import {
 import {
   BARIKOI_COLORS,
   MAP_STYLES,
-  useBarikoiMapStyle,
+  useSPLMapStyle,
 } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
 export default function GeometryScreen() {
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
 
   // Center point
   const centerPoint: [number, number] = [46.6773, 24.7136]; // Center of Riyadh

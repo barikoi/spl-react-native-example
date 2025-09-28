@@ -20,12 +20,12 @@ import {
 import {
   BARIKOI_COLORS,
   MAP_STYLES,
-  useBarikoiMapStyle,
+  useSPLMapStyle,
 } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
 export default function LineScreen() {
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
 
   // Line data - example line between two points
   const lineGeoJSON: FeatureCollection = {

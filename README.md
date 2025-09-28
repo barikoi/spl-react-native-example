@@ -235,10 +235,10 @@ npm run ios      # Starts app on iOS simulator (requires Xcode)
 
 ```typescript
 import { Camera, MapView, MarkerView } from "@maplibre/maplibre-react-native";
-import { useBarikoiMapStyle } from "../../utils/mapUtils";
+import { useSPLMapStyle } from "../../utils/mapUtils";
 
 export default function SimpleMapScreen() {
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
 
   if (loading) return <ActivityIndicator />;
   if (error) return <Text>Error: {error}</Text>;
@@ -308,10 +308,10 @@ A: Yes, this code follows React Native best practices and is suitable for produc
 
    ```typescript
    import { MapView, Camera } from "@maplibre/maplibre-react-native";
-   import { useBarikoiMapStyle } from "../../utils/mapUtils";
+   import { useSPLMapStyle } from "../../utils/mapUtils";
 
    export default function YourNewScreen() {
-     const { styleJson, loading, error } = useBarikoiMapStyle();
+     const { styleJson, loading, error } = useSPLMapStyle();
 
      if (loading) return <ActivityIndicator />;
      if (error) return <Text>Error: {error}</Text>;

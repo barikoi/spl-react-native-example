@@ -14,12 +14,12 @@ import {
   BARIKOI_COLORS,
   DEFAULT_CAMERA_SETTINGS,
   MAP_STYLES,
-  useBarikoiMapStyle,
+  useSPLMapStyle,
 } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
 export default function SimpleMapScreen() {
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
 
   if (loading) {
     return (

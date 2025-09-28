@@ -34,7 +34,7 @@ import {
   createCirclePolygon,
   DEFAULT_CAMERA_SETTINGS,
   MAP_STYLES,
-  useBarikoiMapStyle,
+  useSPLMapStyle,
 } from "../../utils/mapUtils";
 import BarikoiLogo from "../BarikoiLogo";
 
@@ -87,7 +87,7 @@ const MAX_ZOOM_LEVEL = 20;
  */
 export default function ImprovedMapScreen() {
   // State management
-  const { styleJson, loading, error } = useBarikoiMapStyle();
+  const { styleJson, loading, error } = useSPLMapStyle();
   const [location, setLocation] = useState<LocationObject | null>(null);
   const [followsUserLocation, setFollowsUserLocation] = useState(false);
   const [mapRotation, setMapRotation] = useState(0);
