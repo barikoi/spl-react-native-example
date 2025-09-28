@@ -1,16 +1,6 @@
 # 🗺️ React Native (Expo) Map App with Barikoi Maps
 
-A comprehensive React Native (Expo) application demonstrating various map features using **Barikoi Maps**, Bangladesh's leading mapping service, integrated with **@maplibre/maplibre-react-native**. This project serves as a complete example for the React Native community.
-
-## 🔑 IMPORTANT: Get Your API Key First!
-
-⚠️ **Before running this project, you MUST:**
-
-1. Visit [https://developer.barikoi.com](https://developer.barikoi.com) and create an **account**
-2. Get your API key from the dashboard -> account -> API Key
-3. Replace `YOUR_API_KEY_HERE` in `utils/mapUtils.ts`
-
-❌ **The app will NOT work without a valid API key!**
+A comprehensive React Native (Expo) application demonstrating various map features using **SPL Maps**, Saudi's leading mapping service, integrated with **@maplibre/maplibre-react-native**. This project serves as a complete example for the React Native community.
 
 ## 📦 Version Info
 
@@ -25,15 +15,15 @@ A comprehensive React Native (Expo) application demonstrating various map featur
 This project includes comprehensive documentation to help you get started and build advanced features.
 
 - **[README.md](./README.md)**: You are here! Project overview and quick start guide.
-- **[DEVELOPER_GUIDE.md](./docs/DEVELOPER_GUIDE.md)**: A deep dive into the project structure, components, and advanced concepts.
 
 ## 📱 Features
 
 ### ✨ Core Map Features
 
-- **Simple Map Display**: Basic map rendering with Barikoi's style.
+- **Simple Map Display**: Basic map rendering with SPL's style.
 - **Current Location**: Real-time user location tracking with permission handling.
 - **Custom Markers**: Interactive, custom-styled markers.
+- **Draggable Markers**: Markers you can drag to your desired place.
 - **Line Drawing**: Draw lines (polylines) between coordinates.
 - **Polygon Shapes**: Create and display polygon areas.
 - **Complex Geometry**: Combine multiple geometric shapes on a single map.
@@ -60,7 +50,7 @@ This project includes comprehensive documentation to help you get started and bu
 
 ```bash
 # Clone the repository
-git clone https://github.com/barikoi/react-native-map-example.git
+git clone https://github.com/barikoi/spl-react-native-example.git
 cd react-native-map-example
 
 # Install all dependencies
@@ -70,23 +60,7 @@ npm install
 cd ios && pod install && cd ..
 ```
 
-#### 2. Add Your API Key (CRITICAL STEP!)
-
-1. Get your API key from the [dashboard](https://developer.barikoi.com/dashboard) -> [account](https://developer.barikoi.com/account) -> API Key
-2. Open `utils/mapUtils.ts` in your code editor
-3. Replace this line:
-
-```typescript
-const BARIKOI_API_KEY = "YOUR_API_KEY_HERE";
-```
-
-With your actual key:
-
-```typescript
-const BARIKOI_API_KEY = "bkoi_xxxxxxxxxxxxx"; // Your actual key here
-```
-
-#### 3. Run the Project
+#### 2. Run the Project
 
 ```bash
 # Option 1: Start development server with Expo
@@ -213,17 +187,17 @@ npm run ios      # Starts app on iOS simulator (requires Xcode)
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/simple-map.jpg" alt="Basic map display with Barikoi styling" width="100%"><br>
+      <img src="./assets/screenshorts/simple-map.png" alt="Basic map display with Barikoi styling" width="100%"><br>
       <em>Basic map display</em>
     </td>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/current-location.jpg" alt="Real-time location tracking" width="100%"><br>
+      <img src="./assets/screenshorts/current-location.png" alt="Real-time location tracking" width="100%"><br>
       <em>Location tracking</em>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/markar.jpg" alt="Interactive custom markers" width="100%"><br>
+      <img src="./assets/screenshorts/markar.png" alt="Interactive custom markers" width="100%"><br>
       <em>Custom markers</em>
     </td>
     <td></td>
@@ -235,21 +209,21 @@ npm run ios      # Starts app on iOS simulator (requires Xcode)
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/line.jpg" alt="Draw lines between coordinates" width="100%"><br>
+      <img src="./assets/screenshorts/line.png" alt="Draw lines between coordinates" width="100%"><br>
       <em>Draw lines between coordinates</em>
     </td>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/polygon.jpg" alt="Create polygon areas" width="100%"><br>
+      <img src="./assets/screenshorts/polygon.png" alt="Create polygon areas" width="100%"><br>
       <em>Create polygon areas</em>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/geometry.jpg" alt="Multiple geometric shapes" width="100%"><br>
+      <img src="./assets/screenshorts/geometry.png" alt="Multiple geometric shapes" width="100%"><br>
       <em>Multiple geometric shapes</em>
     </td>
     <td align="center" width="50%">
-      <img src="./assets/screenshorts/advanced-map.jpg" alt="Advanced map with multiple features" width="100%"><br>
+      <img src="./assets/screenshorts/advanced-map.png" alt="Advanced map with multiple features" width="100%"><br>
       <em>Advanced map with multiple features</em>
     </td>
   </tr>
